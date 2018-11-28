@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+.mainmenu { position: relative; }
+
+.sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+a:visited{
+    color: green;
+}
+
+.mainmenu:hover
+.sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(10%);
+  transition-delay: 0.5s, 0s, 0.3s;
+}
+body { padding: 2%; font-size: 16px; font-family: 'Courgette', serif;}
+
+nav a { color: black; display: block; padding: 0.5em 1em; text-decoration: none; }
+nav a:hover { color: white; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background: lightgray; text-align: center; }
+nav > ul > li { display: inline-block; border-left: solid 1px gray; }
+nav > ul > li:first-child { border-left: none; }
+
+.sub-menu {
+  background: lightgray;
+}
